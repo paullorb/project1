@@ -4,10 +4,30 @@
     box-sizing: border-box;
 }
 
-nav ol {
+nav {
     display: flex;
+}
 
-    & li {
-        text-decoration: none;
-    }
+#our-story {
+
+}
+
+#watch {
+
+}
+
+#expertise {
+
+}
+
+#team {
+
+}
+
+#contact-client {
+
+}
+
+footer {
+    
 }
