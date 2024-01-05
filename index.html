@@ -1,14 +1,65 @@
 <!DOCTYPE html>
+<!-- relevant links
+github.io page  https://paullorb.github.io/psd-to-html/ 
+page to copy    https://bootstrapthemes.co/demo/html/tajem-free-html5-creative-agency-portfolio-template/
+wbs lesson      https://learn.wbscodingschool.com/courses/full-stack-web-app/lessons/transform-a-psd-into-a-website-2/
+
+before changing anything, make sure to switch to a new branch or create a new one
+to switch to a new branch, type git checkout <branch name>
+to create a new branch, type git checkout -b <branch name>
+
+you can check https://github.com/paullorb/psd-to-html/branches
+to see all the branches and see how close they are to the main branch
+if the branch you want to switch to is:
+  - ahead of the main branch, merge it into the main branch         and do: git checkout <branch name>    and then: git push origin <branch name>
+  - behind the main branch,  merge the main branch into it          and do: git checkout main, then: git pull origin main, then: git chekcout <branch name>, then: git pull origin main
+  - close to the main branch, merge it anyway into the main branch  do anyway: git checkout <branch name> and then: git pull origin main
+
+after doing anything
+-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PSD TO HTML</title>
-    <link href="./assets/styles/style.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div class="container">
+      <header>
+        <nav>
+          <ol>
+            <li class="nav_link"><a href="#">Home</a></li>
+            <li class="nav_link"><a href="#">About</a></li>
+            <li class="nav_link"><a href="#">Expertise</a></li>
+            <li class="nav_link"><a href="#">Teams</a></li>
+            <li class="nav_link"><a href="#">Works</a></li>
+            <li class="nav_link"><a href="#">People say</a></li>
+            <li class="nav_link"><a href="#">Contact</a></li>
+          </ol>
+        </nav>
+      </header>
+      <section id="hero">
+        <div id="hero_content">
+          <h1 id="hero_heading">WE ARE AWESOME CREATIVE AGENCY</h1>
+          <p id="hero_p">
+            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+            velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+            auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+            Morbi accumsan ipsum velit.
+          </p>
+          <button id="hero_button">Learn More</button>
+        </div>
+      </section>
+      <main>
+        <section id="our-story"></section>
+        <section id="watch"></section>
+        <section id="expertise"></section>
+        <section id="team"></section>
+        <section id="contact-client"></section>
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>

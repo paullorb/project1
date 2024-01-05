@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #e4e6f8;
+}
+html {
+  /* 62.5% of 16px browser font size is 10px */
+  font-size: 62.5%;
+}
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+}
+
+#our-story {
+}
+
+#watch {
+}
+
+#expertise {
+}
+
+#team {
+}
+
+#contact-client {
+}
+
+footer {
+}
