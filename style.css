@@ -20,6 +20,13 @@ nav {
   display: flex;
 }
 
+
+
+
+
+
+
+
 #our-story {
 }
 
@@ -29,8 +36,197 @@ nav {
 #expertise {
 }
 
-#team {
-}
+
+.bg-overlay {
+  
+  position: relative;
+  z-index: 100;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .bg-overlay:before {
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(47, 30, 84, 0.85);
+    z-index: -1; }
+
+.content-box {
+  max-width: 96rem;
+  padding: 0 1.5rem;
+  margin: 0 auto; }
+
+.block-section {
+  padding: 7rem 2rem; }
+
+.heading--title {
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.heading--job {
+  text-transform: uppercase;
+  color: #c6c4c9;
+  font-weight: 300;
+  font-size: 1.3rem; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 36.5em) {
+    html {
+      font-size: 55%; } }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  width: 100%;
+  background-color: #FFF; }
+
+
+
+img {
+  display: block;
+  max-width: 100%; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #34313c; }
+
+p {
+  color: #7a7a7a;
+  font-size: 1.4rem; }
+
+input,
+textarea {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  font-family: "Roboto", sans-serif, sans-serif;
+  resize: none; }
+
+.heading-title,
+.heading-sub {
+  font-family: "Playfair Display", serif; }
+
+.heading-sub {
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-align: center; }
+
+.heading-block {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  color: #34313c;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: 900;
+  margin-bottom: .75rem; }
+
+.heading-border {
+  position: relative;
+  padding-bottom: 2rem; }
+  .heading-border:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 2px;
+    background-color: #c6c4c9; }
+
+  
+.team {
+  background-image: url("assets/images/header/bgk-header.png");
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: calc((300/1600)*100%) [center-start] 1fr [center-end] calc((300/1600)*100%);
+  grid-template-columns: calc((300/1600)*100%) [center-start] 1fr [center-end] calc((300/1600)*100%); }
+  @media only screen and (max-width: 65em) {
+    .team {
+      -ms-grid-columns: [center-start] 1fr [center-end];
+      grid-template-columns: [center-start] 1fr [center-end]; } }
+  .team-inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: min-content 1fr (min-content)[2];
+    grid-template-rows: -webkit-min-content 1fr repeat(2, -webkit-min-content);
+    grid-template-rows: min-content 1fr repeat(2, min-content);
+    grid-column: center-start / center-end; }
+  .team-heading {
+    text-align: center;
+    margin-bottom: 4.5rem; }
+  .team .heading-block,
+  .team .heading-sub {
+    color: white; }
+  .team-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(calc(25% - 2.2rem), 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(calc(25% - 2.2rem), 1fr));
+    grid-column-gap: 2rem;
+    margin-bottom: 5rem; }
+    @media only screen and (max-width: 50em) {
+      .team-list {
+        -ms-grid-columns: (minmax(calc(50% - 2.2rem), 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(calc(50% - 2.2rem), 1fr)); } }
+    @media only screen and (max-width: 26em) {
+      .team-list {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr; } }
+  .team-item {
+    border: 1px solid #c6c4c9;
+    margin-bottom: 2rem; }
+  .team-info {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center; }
+  .team-join {
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    letter-spacing: .5px; }
+  .team .btn--primary {
+    -ms-grid-column-align: center;
+    justify-self: center; }
+
+
+.btn {
+  display: inline-block;
+  border: 0;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  cursor: pointer;
+  -webkit-transition: .25s;
+  transition: .25s;
+  font-weight: 700;
+  padding: 1rem 3rem; }
+  .btn--primary {
+    background-color: transparent;
+    color: #0ae8d3;
+    border: 1px solid #0ae8d3; }
+    .btn--primary:hover {
+      background-color: #FFF;
+      border-color: #FFF; }
+    .btn--primary.btn--bgwhite:hover {
+      background-color: #0ae8d3;
+      color: white; }
+
+
+
+
+
 
 #contact-client {
 }
