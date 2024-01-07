@@ -54,7 +54,24 @@ after doing anything
       </section>
       <main>
         <section id="our-story"></section>
-        <section id="watch"></section>
+        <section class="watch">
+          <div
+            id="watch__video__center_item"
+            onclick="document.getElementById('story-vidio').play();document.getElementById('watch__video__center_item').style.display='none'; "
+          >
+            <img src="/assets/videos/play.png" />
+          </div>
+          <video
+            id="story-vidio"
+            class="watch__video"
+            style="width: 100%"
+            preload="none"
+            poster="/assets/images/hero/bgk-middle.png"
+            loop
+          >
+            <source src="/assets/videos/city2.mp4" type="video/mp4" />
+          </video>
+        </section>
         <section id="expertise"></section>
         <section id="team"></section>
         <section id="contact-client"></section>
