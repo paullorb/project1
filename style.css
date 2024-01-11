@@ -80,6 +80,12 @@ nav {
     font-family: "roboto";
     color: var(--tajam-color);
     font-size: 3rem !important;
+    mask-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(0, 0, 0, 1)),
+      to(rgba(0, 0, 0, 0.5)));
     -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, 
     from(rgba(0,0,0,1)), to(rgba(0,0,0,0.5)));
     font-weight: 100;
@@ -254,8 +260,8 @@ nav {
 .expertise__no_border_bottom {
   border-bottom: 0;
 }
-#team {
-}
+/* #team {
+} */
 
 .watch__video {
   width: 100vw;
@@ -292,7 +298,6 @@ nav {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #e4e6f ;
     z-index: -1; }
 
 .content-box {
@@ -381,7 +386,7 @@ textarea {
   .team-inner {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: min-content 1fr (min-content)[2];
+    -ms-grid-rows: min-content 1fr min-content 2;
     grid-template-rows: -webkit-min-content 1fr repeat(2, -webkit-min-content);
     grid-template-rows: min-content 1fr repeat(2, min-content);
     grid-column: center-start / center-end; }
@@ -454,7 +459,7 @@ textarea {
   display: -ms-grid;
   display: grid;
   grid-column: center-start/center-end;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 10rem;
   -webkit-box-align: start;
@@ -492,7 +497,7 @@ textarea {
   display: grid;
   grid-column-gap: 6rem;
   grid-row-gap: 4rem;
-  -ms-grid-columns: (minmax(min-content, 1fr))[2];
+  /* -ms-grid-columns: (minmax(min-content, 1fr))[2]; */
   grid-template-columns: repeat(2, minmax(-webkit-min-content, 1fr));
   grid-template-columns: repeat(2, minmax(min-content, 1fr));
   -webkit-box-align: center;
@@ -504,8 +509,8 @@ textarea {
       justify-items: center; } }
 
 
-#contact-client {
-}
+/* #contact-client {
+} */
 
 .footer {
   background-image: url("assets/images/footer/bgk-footer.png");
@@ -529,7 +534,7 @@ textarea {
     list-style-type: none;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2] 1.5fr;
+    -ms-grid-columns: (1fr 1fr) 1.5fr;
     grid-template-columns: repeat(2, 1fr) 1.5fr;
     grid-column-gap: 2rem;
     -webkit-box-align: center;
