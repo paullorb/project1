@@ -14,7 +14,7 @@ html {
 .container {
   width: 100%;
   margin: 0 auto;
-  --tajam-color: #0ae8d3;
+  --tajam-color: #71fdff;
 }
 
 #hero {
@@ -63,7 +63,7 @@ nav {
   gap: 1rem;
   color: var(--tajam-color);
   & p {
-    font-family: sans-serif;
+    font-family: "roboto";
     color: var(--tajam-color);
     font-size: 3rem !important;
     -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, 
@@ -110,15 +110,18 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid var(--tajam-color);
+  border: 1.1px solid var(--tajam-color);
   color: var(--tajam-color);
-  width: 8%;
-  height: 5rem;
+  width: 12rem;
+  height: 4rem;
   margin: 2% auto;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   background: rgba(255, 255, 255, 0.1) !important;
+  text-transform: uppercase;
+  opacity: 0.8;
+  letter-spacing: 0.1px;
 }
 
 
