@@ -37,9 +37,14 @@ nav {
     :hover {
       color: var(--tajam-color) !important;
     }
+
+    & a {
+      text-decoration: none;
+      color: white;
+    }
   }
 
-  & ol {
+  & ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -122,9 +127,8 @@ nav {
   background: white;
   min-height: 50svh;
   margin: auto 0;
-  border: 3px solid green;
   width: auto;
-  align: items: center;
+  align-items: center;
 }
 
 #our_story_left {
