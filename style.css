@@ -199,16 +199,18 @@ nav {
   
 }
 .expertise__header {
+  color: #777;
   font-size: 1.6rem;
   text-align: center;
-  line-height: 2rem;
-  margin: 5rem;
+  line-height: 0.9rem;
+  margin: 10rem 5rem 2rem 5rem;
 }
 .expertise__header__divider {
-  margin: 2rem auto;
-  max-width: 15rem;
+  margin: 1rem auto;
+  max-width: 8rem;
 }
 .expertise__main {
+  color: #777;
   max-width: 120rem;
   width: 80%;
   min-height: 40;
@@ -231,14 +233,14 @@ nav {
   padding-top: 3rem;
 }
 .expertise__main__item h5 {
-  padding: 1rem;
+  padding-top: 1rem;
   font-size: 1.2rem;
   line-height: 1.3rem;
 }
 .expertise__main__item p {
   font-size: 1.2rem;
   line-height: 1.7rem;
-  padding: 1rem 1rem 2rem;
+  padding: 0 1rem 2rem;
 }
 .expertise__no_border_right {
   border-right: 0;
