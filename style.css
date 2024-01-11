@@ -95,6 +95,7 @@ nav {
     -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, 
     from(rgba(0,0,0,1)), to(rgba(0,0,0,0.5)));
     font-weight: 100;
+    opacity: 0.8;
   }
 }
 
@@ -635,7 +636,6 @@ textarea {
 .footer-list li.footer-heading:first-child {
   display: flex;
   align-items: center;
-  border: 1px solid red;
 
   & p {
     font-family: "roboto";
