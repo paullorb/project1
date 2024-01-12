@@ -57,6 +57,7 @@ nav {
     padding: 3rem 0.5rem;
     :hover {
       color: var(--tajam-color) !important;
+      opacity: 0.7;
     }
 
     & a {
