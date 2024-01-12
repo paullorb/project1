@@ -59,6 +59,7 @@ nav {
     padding: 3rem 0.5rem;
     :hover {
       color: var(--tajam-color) !important;
+      opacity: 0.7;
     }
 
     & a {
@@ -97,6 +98,7 @@ nav {
     -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, 
     from(rgba(0,0,0,1)), to(rgba(0,0,0,0.5)));
     font-weight: 100;
+    opacity: 0.8;
   }
 }
 
@@ -175,11 +177,12 @@ nav {
     margin-top : 2rem;
     font-family: "Playfair Display", serif !important;
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: 500;
     text-transform: uppercase;
     flex-basis: 100%;
     padding: 0;
     margin: 1rem 0;
+    opacity: 0.7;
   }
   & p {
     font-size: 1.5rem;
@@ -187,6 +190,7 @@ nav {
     padding: 0;
     margin: 1rem 0;
     opacity: 0.3;
+    line-height: 2rem;
   }
 }
 
@@ -631,6 +635,29 @@ textarea {
     margin-bottom: 1.5rem;
 
    }
+
+.footer-list li.footer-heading:first-child {
+  display: flex;
+  align-items: center;
+
+  & p {
+    font-family: "roboto";
+    color: var(--tajam-color);
+    font-size: 3rem !important;
+    mask-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(0, 0, 0, 1)),
+      to(rgba(0, 0, 0, 0.5)));
+    -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0.5)));
+    font-weight: 100;
+    margin-left: 1rem;
+    opacity: 0.8;
+  }
+}
+
   .footer-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -681,7 +708,8 @@ textarea {
     color: white; }
   @media only screen and (max-width: 30em) {
     .footer-copyright {
-      margin-top: 1rem; } }
+      margin-top: 1rem; 
+    } }
   .footer-nav {
     display: -webkit-box;
     display: -ms-flexbox;
