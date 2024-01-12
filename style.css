@@ -40,6 +40,8 @@ html {
 
 #hero {
   background: url("./assets/images/header/bgk-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 70svh;
 
   & * {
